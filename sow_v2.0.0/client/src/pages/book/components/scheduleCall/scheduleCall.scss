@@ -1,0 +1,63 @@
+.book {
+ 
+  
+  
+  
+ background-color: black;
+  
+
+  background: 
+  radial-gradient(
+    farthest-corner at bottom left,
+    rgb(20, 30, 48), 
+    transparent
+  ),
+  radial-gradient(
+    farthest-corner at bottom right,
+    rgb(4, 76, 108), 
+    transparent 600px
+  ),
+
+  radial-gradient(
+    farthest-side at top right,
+    rgba(37,149,194,1), 
+    transparent 
+  ),
+  radial-gradient(
+    farthest-corner at top left,
+    rgb(0, 5, 8), 
+    transparent 700px
+  ),
+  radial-gradient(
+    circle at top right,
+    rgba(39,193,230,1), 
+    transparent 
+  ),
+
+
+ 
+
+
+}
+
+.h {
+
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  
+}
+
+.book-container {
+  background:  rgb(20, 30, 48);
+ 
+}
+
+
+.widget {
+
+
+}
+
