@@ -1,87 +1,45 @@
 import React, { useState, useRef, useEffect, useCycle } from 'react'
+
 import { Navigation } from './components'
-import './header.scss'
+
 import { RiMenu4Fill, RiCloseFill } from 'react-icons/ri';
-
-import { TbMenu } from 'react-icons/tb';
-
-
-
 import { useInView } from 'react-intersection-observer';
 
-
- 
-
-  
-
+import './header.scss'
 
 const Header = () => {
 
-  const { ref:logoRef, inView: logoVisible} = useInView({
-    /* Optional options */
-    threshold: 0,
-  });
+  // menu functionality
+  const [ open, setOpen] = useState(false);
 
-//const myRef =useRef();
-const [ open, setOpen] = useState(false);
-//const [open, cycleOpen] = useCycle(false, true);
+  const openMenu = () => {
+    setOpen(!open);
+  }
 
-const openMenu = () => {
-
-  setOpen(!open);
+  const { ref: logoRef, inView: logoVisible} = useInView();
   
-   }
   return (
 
-    
-   <div  style={{
-   
-      //position: 'relative'
-     
+   <div>
 
-   }}>
-    
-  
      <Navigation open={open}/>
 
+      {/* logo */}
+      <div className='logo-container'>
+        <div ref={logoRef} className='spyder-logo'>SPYDER</div>
+      </div>
 
-     {/* <MenuBtn open={open} openMenu={openMenu} /> */}
-     <div 
-    className='logo-container'
-    
-    style={{
-      
-      position: 'relative',
-    
-     
-    }}>
-   
-          
-          <div ref={logoRef} 
-          className='spyder-logo'>
-          SPYDER
-          </div>
-    </div>
-  <div style={{
-      //position: 'relative',
-  }}>
+      {/* menu button */}
       <div className="btn-container">
+        <button  
+        className={ logoVisible ? 'menu-btn' : 'menu-btn-scroll'} 
+        onClick={openMenu}> {
+          open ?  <RiCloseFill className='menu-close-icon' /> : <RiMenu4Fill className='menu-open-icon'/>
+        }
+        </button>
+      </div>
    
-  
-      
-        <button  className={ logoVisible ? 'menu-btn' : 'menu-btn-scroll'} onClick={openMenu}>{
-        
-        open ?  <RiCloseFill className='menu-close-icon' /> :  <RiMenu4Fill className='menu-open-icon'/>
-        
-        
-        }</button>
 
-
-      </div>
-      </div>
-
-
- 
      </div>
 
     

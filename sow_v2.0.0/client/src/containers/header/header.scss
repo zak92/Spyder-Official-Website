@@ -1,72 +1,90 @@
 
 @import '../../App.scss';
 
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 799px) {
+  .spyder-logo {
+    font-size: 1.35em;
+  }
+  .menu-open-icon {
+    font-size: 2.25em;
+  }
+  
+  .menu-close-icon {
+    font-size: 2.25em;
+  }
+  
+}
 
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+  .spyder-logo {
+    font-size: 1.5em;
+  }
+  .menu-open-icon {
+    font-size: 2.5em;
+  }
+  
+  .menu-close-icon {
+    font-size: 2.5em;
+  }
+  
+}
 
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1100px) {
+  .spyder-logo {
+    font-size: 1.8em;
+  }
+  .menu-open-icon {
+    font-size: 2.75em;
+  }
+  .menu-close-icon {
+    font-size: 2.75em;
+  }
+  
+}
 
+.logo-container {
+  position: relative;
+}
 
 .spyder-logo {
   font-family: $logo-font;
-  font-size: 1.5em;
   letter-spacing: 0.1em;
   color: $base-color;
   color: white;
-
   padding: 1em;
-
   position: absolute;
-  top: 0;
+  top: 10px;
 }
-
-
-
 
 .menu-open-icon {
   color: white;
-  font-size: 35px;
-  
- 
+
 }
 
 .menu-close-icon {
   color: white;
-  font-size: 35px;
-  
+
 }
 
 .btn-container {
   position: fixed;
   top: 0;
   right: 0;
- 
- 
   z-index: 999;
-  padding-right: 2em;
-
-    
-  
+  padding-right: 2em; 
 }
-
-
-
 
 
 .menu-btn {
   cursor: pointer;
   margin: 1.25rem;
-  // border-radius: 10.5em;
   border: none;
   padding: 0.25rem 0.5rem;
   background-color: transparent;
-  //background-color: black;
   transition: all 1.25s;
- 
-  //backdrop-filter: blur(40px);
-  // transition: 100ms backdrop-filter linear;
- 
- 
- 
-
 }
 
 .menu-btn-scroll {
@@ -75,8 +93,6 @@
   border-radius: 2em;
   border: none;
   padding: 0.3em 0.6em;
- 
-  //background-color: rgb(37, 149, 194);
   background-color: $base-color;
   transition: all 1.5s;
   

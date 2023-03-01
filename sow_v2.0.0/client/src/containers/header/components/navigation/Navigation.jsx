@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import './navigation.scss';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NavLink, Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 
 import {
   faLinkedin,
@@ -11,9 +9,11 @@ import {
   faFacebook
 } from "@fortawesome/free-brands-svg-icons";
 
-import {motion, AnimatePresence, useCycle } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { SiWhatsapp } from 'react-icons/si';
 import { MdOutlineMail } from 'react-icons/md';
+
+import './navigation.scss';
 
 
 const links = [
@@ -21,7 +21,6 @@ const links = [
   { name: "Ecommerce", to: '/ecommerce', id: 3 },
   { name: "Email Marketing", to: "/email", id: 4 },
   { name: "Contact", to: "/book", id: 5 },
-
 
 ];
 
@@ -60,7 +59,6 @@ const Navbar = (props) => {
             animate={{
               width: '100vw',
               ease: 'easeInOut',
-              
               transition: { duration: 0.25 },
               height: '100vh',
               position: "absolute",
@@ -91,11 +89,8 @@ const Navbar = (props) => {
                   <NavLink  
                   reloadDocument
                   key={id} 
-                  //className={({ isActive }) => (isActive ? 'active' : 'link')}
                   className='link'
                   to={to}
-                  //onClick={() => setOpen(false)}
-                  
                   >
                   {name}</NavLink>
                   
@@ -104,19 +99,14 @@ const Navbar = (props) => {
                 <motion.li
                 variants={itemVariants}
                 >
-                   <NavLink  
-                 reloadDocument
+                  <NavLink  
+                  reloadDocument
                   className='cta'
                   to='/book'
-                  //onClick={() => setOpen(false)}
                   style={{color:'white'}}
-                  //whileHover={{color:'black'}}
                   >
-                  Book a Call</NavLink>
-                  
-                
-                  
-                
+                  Book a Call
+                  </NavLink>
                 </motion.li>
                 </ul>
             </motion.div>
@@ -138,11 +128,11 @@ const Navbar = (props) => {
               variants={itemVariants}
               >
               <motion.p>
-                <SiWhatsapp variants={itemVariants} className='whatsapp-icon' style={{ fontSize: '0.35em', color: 'white'}} /> 
+                <SiWhatsapp variants={itemVariants} className='whatsapp-icon' /> 
                  <motion.a variants={itemVariants}  href="tel:+2782 397 1796">+2782 397 1796</motion.a>
               </motion.p>
               <motion.p>
-                <MdOutlineMail variants={itemVariants} className='email-icon' style={{ fontSize: '0.4em', color: 'white'}} /> 
+                <MdOutlineMail variants={itemVariants} className='email-icon' /> 
                 <motion.a  variants={itemVariants} href="mailto:">spyder@spyder.digital</motion.a>
                 </motion.p>
             </motion.div>
