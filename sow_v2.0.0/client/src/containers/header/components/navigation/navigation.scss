@@ -1,0 +1,229 @@
+
+@import '../../../../App.scss';
+
+aside {
+  
+  font-family: $font-family-1; 
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 799px) {
+  .container {
+    z-index: 999;
+    background-color: $base-color; // matte black
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    
+  }
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    z-index: 99;
+    background: $color-2;
+    background: linear-gradient(86deg, $color-1 0%, $color-2 40%, $color-3 100%);
+    text-align: center;
+    font-size: 3em;
+    width: 100%;
+   
+  }
+}
+
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+  .container {
+    z-index: 999;
+    background-color: $base-color; // matte black
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    width: 100%;
+    
+  }
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    z-index: 99;
+    background: $color-2;
+    background: linear-gradient(86deg, $color-1 0%, $color-2 40%, $color-3 100%);
+    width: 100%; 
+    text-align: center;
+    font-size: 3em;
+   
+  }
+  
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1100px) {
+  .container {
+    z-index: 999;
+    background-color: $base-color; // matte black
+    width: 75%;
+    font-size: 1.75em;
+    display: flex;
+    justify-content:space-around;
+    
+  }
+
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    z-index: 99;
+    background: $color-2;
+    background: linear-gradient(86deg, $color-1 0%, $color-2 40%, $color-3 100%);
+    width: 25%; 
+    text-align: center;
+    font-size: 3.5em;
+   
+  }
+  
+}
+
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ul {
+  list-style-type: none;
+}
+
+.link {
+  font-weight: 600;
+  background-image: linear-gradient(
+    to right,
+    $color-2,
+    $color-3 50%,
+    #e7dcdc 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-in-out;
+  margin: 20px;
+  
+}
+
+.link:before{
+  content: '';
+  background: linear-gradient(84deg, $color-1 0%, $color-2 50%, $color-3 100%);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.link:hover {
+ background-position: 0;
+ cursor: pointer;
+}
+
+.link:hover::before{
+  width: 100%;
+ 
+}
+
+.cta{
+  border: 2px solid white;
+  border-radius: 2em;
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.4em 1.75em;
+  overflow: hidden;
+  transition: 1s all ease;
+  margin: 20px;
+}
+.cta::before{
+  background: linear-gradient(84deg, $color-1 0%, $color-2 40%, $color-3 100%);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  width: 0%;
+  height: 100%;
+}
+
+.cta:hover::before{
+  width: 100%;
+
+}
+
+.cta:hover {
+  border: 2px solid #242020;
+}
+
+.contact-info-container a {
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  color: black;
+  font-size: 0.35em;
+
+}
+
+.logo {
+  font-family: dodger;
+  font-size: 0.4em;
+  letter-spacing: 0.1em;
+  color: black;
+  padding-bottom: 2em;
+}
+
+.social-icon {
+  font-size: 1.4em;
+   color: white;
+ }
+
+.socials {
+  display: flex;
+  justify-content: center;
+
+  a {
+    padding: 3em 0.4em;
+  }
+
+}
+
+
+
+
+
+ 
+

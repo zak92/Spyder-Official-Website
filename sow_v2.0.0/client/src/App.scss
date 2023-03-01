@@ -2,11 +2,24 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #000;
 
+
+$font-family-1: 'Poiret One', sans-serif;
+$color-1: rgb(4,76,108);
+$color-2: rgb(37, 149, 194);
+$color-3: rgb(21, 208, 255);
+$base-color: rgb(40, 40, 43); // matte black
+$logo-font: dodger;
+
+
 @font-face {
   font-family: dodger;
   src: url('./assets/fonts/dodger/dodger3.ttf');
 }
 
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
 
 * {
   box-sizing: border-box;

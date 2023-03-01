@@ -74,6 +74,11 @@ Cool design
 https://www.youtube.com/watch?v=ugCN_gynFYw
 
 
+Graphics and icons
+
+https://delesign.com/free-designs/graphics/icon
+
+
 Shortcuts
  To create a React functional component
  Type: 'rafce' in editor

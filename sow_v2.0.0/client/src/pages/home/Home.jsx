@@ -1,14 +1,14 @@
 import React from 'react'
 import { Footer, Header } from '../../containers';
 import './home.scss'
-import {motion, AnimatePresence, useCycle } from "framer-motion";
+import { useCycle } from 'framer-motion';
 import VideoContainer from './components/videoContainer/VideoContainer';
 
 
 const Home = () => {
 
 
-  const [open, cycleOpen] = useCycle(false, true);
+
 
 
   return (
@@ -16,13 +16,14 @@ const Home = () => {
     <main style={{
         
         
-      overflow: open ? "hidden" : "auto",
-      maxHeight: '100vh'
+      //overflow: open ? "hidden" : "auto",
+      maxHeight: '100vh',
+      overflow: 'auto'
     
       
     }}>
 
-        <Header open={open} cycleOpen={cycleOpen}/>
+        <Header />
 
 
        

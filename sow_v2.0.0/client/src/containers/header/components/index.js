@@ -1,2 +1,1 @@
-export { default as Navbar } from './navbar/Navbar';
-export { default as MenuBtn } from './menuBtn/MenuBtn';
+export { default as Navigation } from './navigation/Navigation';

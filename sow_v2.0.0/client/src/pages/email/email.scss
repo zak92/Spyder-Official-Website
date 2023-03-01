@@ -1,0 +1,107 @@
+.spyder-logo {
+  font-family: dodger;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  color: black;
+  color: white;
+
+  padding: 1em
+}
+
+
+
+.email-headline-container{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  height:100vh;
+  width: 100%;
+  background: 
+      linear-gradient(-45deg,  
+        rgb(4, 76, 108), 
+        rgb(255, 105, 105),
+        rgb(37, 149, 194),
+        rgb(20, 30, 48)
+      );
+  background-size:  400% 400%;
+  
+  
+  animation: gradient 15s ease infinite;
+  
+
+ 
+ 
+
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.website-headline-text {
+  
+// position: absolute;
+// top: 50%;
+// left: 50%;
+// transform: translate(-50%, -50%);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+  padding: 1em 6em;
+
+
+
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+
+
+
+
+
+  h1 {
+    
+    font-size: 4em;
+    text-transform: capitalize;
+    
+
+  }
+  p {
+    font-size: 1.75em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    padding-left: 7em;
+    padding-right: 7em;
+    color: white;
+  }
+  div {
+    
+    background-color: black;
+    border-radius: 2em;
+    padding: 0.5em;
+    width: 25%;
+    margin: auto;
+   
+    
+   
+  }
+  a {
+    font-size: 1.75em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+
+}

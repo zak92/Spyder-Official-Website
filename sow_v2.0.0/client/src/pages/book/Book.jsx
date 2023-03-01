@@ -6,7 +6,7 @@ import {motion, AnimatePresence, useCycle } from "framer-motion";
 
 const Book = () => {
 
-  const [open, cycleOpen] = useCycle(false, true);
+
 
 
   return (
@@ -14,13 +14,14 @@ const Book = () => {
     <main style={{
         
         
-      overflow: open ? "hidden" : "auto",
-      maxHeight: '100vh'
+      
+      maxHeight: '100vh',
+      overflow: 'auto'
     
       
     }}>
 
-<Header open={open} cycleOpen={cycleOpen}/>
+<Header />
 
 
        

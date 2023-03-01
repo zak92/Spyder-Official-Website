@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import './navbar.scss';
+import './navigation.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NavLink, Link } from "react-router-dom";
+
 
 import {
   faLinkedin,
@@ -15,9 +17,9 @@ import { MdOutlineMail } from 'react-icons/md';
 
 
 const links = [
-  { name: "Websites & Landing Pages", to: "/", id: 1 },
-  { name: "Ecommerce", to: "#", id: 3 },
-  { name: "Email Marketing", to: "/book", id: 4 },
+  { name: "Websites & Landing Pages", to: "/websites", id: 1 },
+  { name: "Ecommerce", to: '/ecommerce', id: 3 },
+  { name: "Email Marketing", to: "/email", id: 4 },
   { name: "Contact", to: "/book", id: 5 },
 
 
@@ -80,27 +82,43 @@ const Navbar = (props) => {
               exit="closed"
               variants={sideVariants}
             >
-              <div className='nav-links'>
+              <ul className='nav-links'>
               {links.map(({ name, to, id }) => (
-                <motion.a
-                  key={id}
-                  href={to}
+                <motion.li
                   variants={itemVariants}
+                  key={id} 
+                >
+                  <NavLink  
+                  reloadDocument
+                  key={id} 
+                  //className={({ isActive }) => (isActive ? 'active' : 'link')}
                   className='link'
-                >
-                  {name}
-                </motion.a>
+                  to={to}
+                  //onClick={() => setOpen(false)}
+                  
+                  >
+                  {name}</NavLink>
+                  
+                </motion.li>
               ))}
-                <motion.a
-                  variants={itemVariants}
-                  className='cta'
-                  href="/book"
-                  style={{color:'white'}}
-                  whileHover={{color:'black'}}
+                <motion.li
+                variants={itemVariants}
                 >
-                  Book a Call
-                </motion.a>
-                </div>
+                   <NavLink  
+                 reloadDocument
+                  className='cta'
+                  to='/book'
+                  //onClick={() => setOpen(false)}
+                  style={{color:'white'}}
+                  //whileHover={{color:'black'}}
+                  >
+                  Book a Call</NavLink>
+                  
+                
+                  
+                
+                </motion.li>
+                </ul>
             </motion.div>
 
             <motion.div
