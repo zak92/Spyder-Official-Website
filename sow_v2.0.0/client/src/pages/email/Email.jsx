@@ -35,7 +35,7 @@ const Email = () => {
      
 
      <div className='website-headline-text'>
-       <h1> Leverage your greatest asset for growth success  </h1>
+       <h1> Leverage email superpowers for growth success  </h1>
        <p>Build strong relationships with your customers and create lifelong advocates of your brand through the power of email. </p>
        <div>
          <a href='/book'>Book a Call</a>

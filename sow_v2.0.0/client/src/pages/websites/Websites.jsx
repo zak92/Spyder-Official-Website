@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Footer, Header } from '../../containers';
-import { useCycle } from 'framer-motion';
-import './websites.scss';
+import React from 'react';
+import { Footer, Header, HeroBlock } from '../../containers';
+
+
 import MoneyIcon from '../../assets/images/money.svg';
 import LeadsIcon from '../../assets/images/leads.svg';
 import CallIcon from '../../assets/images/call.svg';
@@ -25,6 +25,8 @@ import { ImageSlider } from './components';
 import { Images } from './components/imageSlider/SliderData';
 
 import { useInView } from 'react-intersection-observer';
+
+import './websites.scss';
 
 const moreBenefits = [
   { name: 'Backups', component: Backups, id: 1 },
@@ -63,35 +65,23 @@ const Websites = () => {
   return (
  <>
     
-    <main style={{
-        
-        
-      //overflow: open ? "hidden" : "auto",
-      maxHeight: '100vh',
-      overflow: "auto"
-    
-      
-    }}>
+ <main
+ style={{
+  maxHeight: '100vh',
+  overflow: 'auto'
+ }}
  
- 
-   
+ >
+
+
  <Header />
- 
- 
-  
- 
 
-      <div className='web-headline-container'>
-     
+ <HeroBlock 
+    headline='Stop sabotaging your sales with your website' 
+    subheading='Power up your business with a high converting website.'
+    styleName='web-headline'
+  />
 
-        <div className='website-headline-text'>
-          <h1>Stop sabotaging your sales with your website</h1>
-          <p className='subheading'>Power up your business with a high converting website.</p>
-          <div>
-            <a href='/book'>Book a Call</a>
-          </div>
-        </div>
-      </div>
 
 
     <div  ref={pasRef} className='pas-container'

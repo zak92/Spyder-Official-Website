@@ -17,6 +17,7 @@ const App = () => {
       <Route  path='/websites' element={<Websites />} />
       <Route  path='/ecommerce' element={<Ecommerce />} />
       <Route  path='/email' element={<Email />} />
+      <Route  path='/db-api' element={ <Email />} />
       <Route  path='/book' element={<Book />} />
     </Routes>
     </React.Suspense>

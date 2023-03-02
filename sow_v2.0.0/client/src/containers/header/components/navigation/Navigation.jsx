@@ -20,7 +20,8 @@ const links = [
   { name: "Websites & Landing Pages", to: "/websites", id: 1 },
   { name: "Ecommerce", to: '/ecommerce', id: 3 },
   { name: "Email Marketing", to: "/email", id: 4 },
-  { name: "Contact", to: "/book", id: 5 },
+  { name: "Databases & APIs", to: "/db-api", id: 5 },
+  { name: "Contact", to: "/book", id: 6 },
 
 ];
 
