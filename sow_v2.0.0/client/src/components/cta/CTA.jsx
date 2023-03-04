@@ -1,11 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './cta.scss';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const CTA = () => {
+const CTA = (props) => {
   return (
-    <div>
-      <Link to="/book">Book a Call</Link>
+    <div className={`cta-container-1 ${props.styleName1}`}>
+      <ul>
+        <li>
+          <NavLink  
+          reloadDocument
+          className={`cta-1 ${props.styleName2}`}
+          to='/book'
+          >
+          Book a Call
+          </NavLink>
+        </li>
+      </ul>
     </div>
   )
 }

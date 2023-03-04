@@ -1,0 +1,110 @@
+@import '../../../../App.scss';
+@import '../../websites.scss';
+
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 799px) {
+  .pas {
+    font-size: 1.15em;
+    text-align: center;
+  }
+  .pas-cta-container {
+    margin: auto;
+    width: 100%;
+  }
+}
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+  .pas {
+    font-size: 1.35em;
+    padding-bottom: 5em;
+  }
+  .pas-cta-container {
+    width: 25%;
+  }
+
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1100px) and (max-width: 1800px) {
+  .pas {
+    font-size: 1.5em;
+    padding-bottom: 5em;
+  }
+  .pas-cta-container {
+    width: 25%;
+  }
+
+}
+
+/*Larger Desktop Screen-------------------------------------*/
+@media only screen and (min-width: 1801px) {
+  .pas {
+    font-size: 1.5em;
+    padding-bottom: 8em;
+  }
+  .pas-cta-container {
+    width: 25%;
+  }
+
+}
+
+
+
+
+.pas-container {
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-color: black; /* fallback color */
+  animation: pas-images 15s ease-in-out infinite;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+@keyframes pas-images {
+  0% {
+    background-image:
+      linear-gradient(to right,
+       rgba(0, 0, 0, 1),
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.25)), 
+       url('../../../../assets/images/computer.jpg'); // Photo by <a href="https://unsplash.com/@kmuza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Carlos Muza</a> on <a href="https://unsplash.com/photos/hpjSkU2UYSU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   
+    
+  }
+  50% {
+    background-image:
+      linear-gradient(to right,
+      rgba(0, 0, 0, 1), 
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.25)),
+      url('../../../../assets/images/frustrated.jpg');
+
+  }
+  100% {
+    background-image:
+      linear-gradient(to right,
+       rgba(0, 0, 0, 1), 
+       rgba(0, 0, 0, 0.5),
+       rgba(0, 0, 0, 0.25)),
+      url('../../../../assets/images/people-at-desk.jpg'); // Photo by <a href="https://unsplash.com/@dylandgillis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dylan Gillis</a> on <a href="https://unsplash.com/photos/KdeqA3aTnBY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  }
+}
+
+.pas {
+  font-family: $font-family-2;
+  color: white;
+}
+
+.pas-content {
+  padding-bottom: 2em;
+}
+
+.pas-cta-container {
+  background-color: $theme-color-websites; 
+  
+}
+

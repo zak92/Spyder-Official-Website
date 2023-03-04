@@ -2,12 +2,7 @@ import React from 'react';
 import { Footer, Header, HeroBlock } from '../../containers';
 
 
-import MoneyIcon from '../../assets/images/money.svg';
-import LeadsIcon from '../../assets/images/leads.svg';
-import CallIcon from '../../assets/images/call.svg';
-import BrandIcon from '../../assets/images/brand.svg';
-import GraphIcon from '../../assets/images/graph.svg';
-import EmailListIcon from '../../assets/images/email-list.svg';
+
 
 import Backups from '../../assets/images/backups.svg'
 import Analytics from '../../assets/images/analytics.svg'
@@ -21,8 +16,8 @@ import Support from '../../assets/images/support.svg'
 import Seo from '../../assets/images/seo.svg'
 
 
-import { ImageSlider } from './components';
-import { Images } from './components/imageSlider/SliderData';
+import { Pas, Outcomes } from './components';
+
 
 import { useInView } from 'react-intersection-observer';
 
@@ -54,11 +49,8 @@ const Websites = () => {
     threshold: 0,
   });
 
-  const { ref:pasRef, inView: pasVisible} = useInView({
-    /* Optional options */
-    threshold: 0,
-  });
-  //const [open, cycleOpen] = useCycle(false, true);
+ 
+
 
 
 
@@ -82,112 +74,10 @@ const Websites = () => {
     styleName='web-headline'
   />
 
+ <Pas />
+<Outcomes />
+    
 
-
-    <div  ref={pasRef} className='pas-container'
-    style={{
-      padding: '6em',
-      transition: 'opacity 1s',
-      opacity: pasVisible ? '1' : '0'
-      
-  
-    }}
-    >
-      <div className='pas'>
-      <div
-      className='pas-content'
-     
-   
-      >
-        <p>Your website should be converting enough traffic into customers.  </p><br></br>
-        <p>But it's not.</p><br></br>
-        <p>Even worse, you don't know how well your website is at generating sales.  </p><br></br>
-        <p>You're frustrated and don't know what to do next. </p><br></br>
-        <p>If that sounds familiar, let's talk. </p>
-      </div>
-      <div className='web-cta-2'>
-        <a href='/book'>Book a Call</a>
-      </div>
-      </div>
-    </div>
-
-    <div ref={myRef} style={{
-      backgroundColor:  'rgb(40, 40, 43)', // matte black
-      padding: '3em',
-      transition: 'opacity 1s',
-      opacity: elementVisible ? '1' : '0'
-
-    }}>
-  
-
-  <h1 style={{fontSize: '2.75em', fontFamily: 'Poiret One, sans-serif'}}>What we do for you</h1>
- 
-        
-    <div 
-      className='boxes'
-      >
-      <div className='box'>
-      
-        <div className='box-content'>
-        <img src={MoneyIcon}  alt="React Logo" />
-         <h1>Convert website traffic into paying customers</h1>
-        <p>We help you convert more of your website traffic through conversion-centered design and direct response copywriting</p>
-        </div>
-      </div>
-
-      <div className='box'>
-        <div className='box-content'>
-        <img src={LeadsIcon} alt="React Logo" />
-         <h1>Generate more high-quality leads</h1>
-        <p>We generate leads by integrating forms, email capture and exit-intent technology into your website. </p>
-        </div>
-      </div>
-
-      <div className='box'>
-        <div className='box-content'>
-        <img src={GraphIcon}  alt="React Logo" />
-         <h1>Track the ROI of your website </h1>
-        <p>Eliminate your uncertainty with access to performance metrics that matter. </p>
-        </div>
-      </div>
-
-      <div className='box'>
-        <div className='box-content'>
-        <img src={CallIcon} alt="React Logo" />
-         <h1>Schedule more calls</h1>
-        <p>We use integrated scheduling software, purpose-driven copy and strategically placed CTAs for more conversions. </p>
-        </div>
-      </div>
-
-      <div className='box'>
-        <div className='box-content'>
-        <img src={EmailListIcon}  alt="React Logo" />
-         <h1>Grow your email list </h1>
-        <p>Grow your email list with irresistible offers and content upgrades. Encourage more signs ups with email capture boxes, popups or even dedicated landing pages. </p>
-        </div>
-      </div>
-
-      <div className='box'>
-        <div className='box-content'>
-        <img src={BrandIcon} style={{ }} alt="React Logo" />
-         <h1>Boost your brand </h1>
-        <p>Your website is the face of your brand. Incorporate your brand narrative into your website with essential branding elements. </p>
-        </div>
-      </div>
-
-     
-
-    </div>
-
-    <div className='web-cta'>
-        <a href='/book'>Book a Call</a>
-      </div>
-
-    <div>
-
-    </div>
-
-    </div>
 
 
     <div className='price-container'>
@@ -240,7 +130,7 @@ const Websites = () => {
         position: 'relative',
         bottom: 0,
         left: 0
-      }}>*PPP</p>
+      }}> Parity deals available - We support Parity Purchasing Power</p>
     </div>
       
       <div className='more-benefits'>
@@ -260,7 +150,7 @@ const Websites = () => {
        
 
         <div className='cta-section'>
-          <div className='cta-container'>
+          <div className='ctas-container'>
             <div className='cta-content'>
               <div className='cta-text'>
                 <h2>Are you ready for it?</h2>

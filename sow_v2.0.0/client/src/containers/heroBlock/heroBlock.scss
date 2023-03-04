@@ -15,13 +15,10 @@
     h1 {
       font-size: 2.25em !important;
     }
-  
-    div {
-      padding: 1em 0.5em;
-      width: 60%;
-      margin: auto;
-    }
-  
+  }
+  .hero-cta-container {
+    width: 60%;
+    margin: auto;
   }
   .subheading {
     font-size: 1.25em;
@@ -29,7 +26,7 @@
     padding-bottom: 2em;
   }
   
-  .hero-block-cta {
+  .hero-cta {
     font-size: 1.25em;
   }
 }
@@ -48,12 +45,11 @@
       font-size: 4em !important;
     }
   
-    div {
-      padding: 0.75em 1.5em;
-      width: 40%;
-      margin: auto;
-    }
-  
+  }
+  .hero-cta-container {
+    padding: 0.75em 1.5em;
+    width: 40%;
+    margin: auto;
   }
   
   .subheading {
@@ -62,7 +58,7 @@
     padding-bottom: 2em;
   }
   
-  .hero-block-cta {
+  .hero-cta {
     font-size: 1.5em;
   }
 }
@@ -79,26 +75,20 @@
     h1 {
       font-size: 5em !important;
     }
-  
-    div {
-     
-      width: 25%;
-      margin: auto;
-    }
-    li {
-      padding-top: 0.75em;
-      padding-bottom: 0.75em;
-    }
- 
    
   }
+   .hero-cta-container {
+    width: 25%;
+    margin: auto;
+    
+   }
   .subheading {
     font-size: 1.75em;
     padding-top:2em;
     padding-bottom: 2em;
   }
   
-  .hero-block-cta {
+  .hero-cta {
     font-size: 1.75em;
 
   }
@@ -114,16 +104,7 @@
     h1 {
       font-size: 6em !important;
     }
-  
-    div {
-      padding: 0.5em;
-      width: 20%;
-      margin: auto;
-    }
-    li {
-      padding-top: 0.25em;
-      padding-bottom: 0.25em;
-    }
+   
   }
   .subheading {
     font-size: 2em;
@@ -131,9 +112,12 @@
     padding-bottom: 2em;
   }
   
-  .hero-block-cta {
+  .hero-cta {
     font-size: 2em;
-    
+  }
+  .hero-cta-container {
+    width: 20%;
+    margin: auto;
   }
   
 }
@@ -174,18 +158,6 @@
     text-transform: capitalize;
   }
 
-  div {
-    background-color: $base-color;
-    border-radius: 2em;
-  }
-  div:hover {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-  }
 }
 
 .subheading {
@@ -194,10 +166,8 @@
   font-weight: 500;
 }
 
-.hero-block-cta {
-  font-family: $font-family-2;
-  text-decoration: none;
-  color: white;
-  text-align: center;
+.hero-cta-container {
+  background-color: $base-color;
 }
+
 

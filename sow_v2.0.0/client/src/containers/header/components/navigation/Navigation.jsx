@@ -29,7 +29,8 @@ const itemVariants = {
   closed: {
     opacity: 0,
   },
-  open: { opacity: 1,
+  open: { opacity: 1, 
+  
   }
 };
 
@@ -38,12 +39,14 @@ const sideVariants = {
     transition: {
       staggerChildren: 0.2,
       staggerDirection: -1,
+  
     }
   },
   open: {
     transition: {
       staggerChildren: 0.2,
       staggerDirection: 1,
+    
     }
   }
 };
@@ -56,22 +59,21 @@ const Navbar = (props) => {
     <AnimatePresence>
         {props.open && (
           <motion.aside
-            initial={{ width:0}}
+            initial={{ height:0, opacity:1}}
             animate={{
-              width: '100vw',
+              width: '100%',
               ease: 'easeInOut',
-              transition: { duration: 0.25 },
+              transition: {duration: 0.5 },
               height: '100vh',
-              position: "absolute",
+              position: 'absolute',
               top: 0,
               left: 0,
-              right: 0,
-              bottom: 0
+              
             }}
         
             exit={{
-               opacity:0,
-              transition: { delay: 1.2, duration: 0.75}
+               height:0,
+              transition: { delay: 1.25, duration: 0.5}
             }}
           >
             <motion.div
@@ -121,7 +123,7 @@ const Navbar = (props) => {
             >
               <motion.div 
               variants={itemVariants}
-              className='logo'>
+              className='nav-logo'>
               SPYDER
               </motion.div>
       

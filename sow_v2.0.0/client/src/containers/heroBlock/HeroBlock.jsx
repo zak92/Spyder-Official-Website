@@ -1,7 +1,8 @@
 import React from 'react'
 import './heroBlock.scss';
 
-import { NavLink } from "react-router-dom";
+import { CTA } from '../../components';
+
 
 const HeroBlock = (props) => {
   return (
@@ -9,19 +10,8 @@ const HeroBlock = (props) => {
       <div className='headline-text'>
         <h1>{props.headline}</h1>
         <p className='subheading'>{props.subheading}</p>
-        <div>
-          <ul>
-            <li>
-              <NavLink  
-              reloadDocument
-              className='hero-block-cta'
-              to='/book'
-              >
-              Book a Call
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+        
+        <CTA styleName1='hero-cta-container' styleName2='hero-cta'/> 
       </div>
     </div>
 

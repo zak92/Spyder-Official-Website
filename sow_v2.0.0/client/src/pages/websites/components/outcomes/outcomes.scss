@@ -1,0 +1,117 @@
+@import '../../../../App.scss';
+@import '../../websites.scss';
+
+.boxes {
+  padding: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 3s;
+ }
+ 
+ // Glowing Gradient Border https://www.youtube.com/watch?v=7JSIZwiJgzI
+ .box {
+   // position: relative;
+   // width: 200px;
+   // height: 300px;
+   transition: all 3s;
+   margin: 3.5em 1em;
+   background-color: rgb(40, 40, 43); // matte black
+   
+  
+   
+ 
+   background: 
+       linear-gradient(45deg,  
+         rgb(4, 76, 108), 
+         rgb(255,105,180),
+         rgb(37, 149, 194),
+         rgb(20, 30, 48)
+       );
+   padding: 3px;
+ 
+ 
+   //height: 275px;
+  
+ 
+   
+  
+ 
+ }
+ 
+ 
+ 
+ .box-content {
+   font-family: 'Quicksand', sans-serif;
+   transition: all 3s;
+ 
+   //font-family: 'Pontano Sans', sans-serif;
+   background: rgb(40, 40, 43); // matte black
+   color: white;
+   padding: 2rem;
+   width: 300px;
+   height: 350px;
+   
+  img {
+   position: relative;
+   top: -30%;
+   left: 30%;
+  
+   background: 
+   linear-gradient(45deg,  
+     rgb(4, 76, 108), 
+     rgb(255,105,180),
+     rgb(37, 149, 194),
+     rgb(20, 30, 48)
+   );
+ 
+ border-radius: 50%;
+ padding: 10px;
+ width: 100px;
+ height:100px;
+  }
+ 
+ 
+   h1 {
+     position: relative;
+     top: -30%;
+     color: rgb(37, 149, 194);
+     font-size: 1.8em;
+     text-align: left;
+     padding: 0.25em 0.25em 1em 0.25em;
+     
+   }
+   p {
+     position: relative;
+     top: -30%;
+     font-size: 1.2em;
+   }
+ }
+ 
+ 
+ 
+ 
+ .web-cta {
+   font-family: 'Quicksand', sans-serif;
+   padding: 2em;
+   background-color: rgb(255,105,180);
+   width: 20%;
+   text-align: center;
+   margin: auto;
+   border-radius: 2em;
+   padding: 0.75em 0.1em;
+   a {
+     color: white;
+     text-decoration: none;
+     font-size: 1.75em;
+     
+     
+   }
+ 
+ }
+ 
+ 
+ 
