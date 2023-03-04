@@ -1,6 +1,119 @@
 @import '../../../../App.scss';
 @import '../../websites.scss';
 
+
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 799px) {
+  .outcomes-container {
+    padding: 6em 0 6em;
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+  .box-content {
+    width: 260px;
+    height: 440px;
+    
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    h1 {
+      font-size: 1.75em;
+      
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+  .outcomes-cta {
+    font-size: 1.5em;
+   }
+   .outcomes-cta-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+}
+
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+  .outcomes-container {
+    padding: 6em 0;
+    h1 {
+      font-size: 2em;
+    }
+  }
+  .box-content {
+    width: 260px;
+    height: 450px;
+    
+    img {
+      width: 110px;
+      height: 110px;
+    }
+    h1 {
+      font-size: 1.85em;
+      
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+  .outcomes-cta {
+    font-size: 1.75em;
+    padding: 0.5em
+   }
+   .outcomes-cta-container {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1100px) {
+  .outcomes-container {
+    padding: 6em 0;
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+
+  .box-content {
+    width: 300px;
+    height: 430px;
+    
+      img {
+        width: 110px;
+        height: 110px;
+      }
+      h1 {
+        font-size: 2em; 
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+
+    .outcomes-cta {
+      font-size: 1.75em;
+    }
+    .outcomes-cta-container {
+      width: 20%;
+      margin: auto;
+    }
+  
+}
+
+.outcomes-container {
+  background-color:  $base-color; // matte black
+
+  h1 {
+    font-family: $font-family-1;
+  }  
+}
+
 .boxes {
   padding: 4em;
   display: flex;
@@ -8,110 +121,71 @@
   gap: 40px;
   justify-content: center;
   align-items: center;
-
   transition: all 3s;
  }
  
- // Glowing Gradient Border https://www.youtube.com/watch?v=7JSIZwiJgzI
  .box {
-   // position: relative;
-   // width: 200px;
-   // height: 300px;
    transition: all 3s;
    margin: 3.5em 1em;
-   background-color: rgb(40, 40, 43); // matte black
-   
-  
-   
- 
+   background-color: $base-color;
    background: 
-       linear-gradient(45deg,  
-         rgb(4, 76, 108), 
-         rgb(255,105,180),
-         rgb(37, 149, 194),
-         rgb(20, 30, 48)
+       linear-gradient(-45deg,  
+       $color-1, 
+       $theme-color-websites,
+       $color-2,
+       rgb(20, 30, 48)
        );
-   padding: 3px;
- 
- 
-   //height: 275px;
-  
- 
-   
-  
- 
+   padding: 5px;
+
  }
  
  
  
  .box-content {
-   font-family: 'Quicksand', sans-serif;
+   font-family: $font-family-2;
    transition: all 3s;
- 
-   //font-family: 'Pontano Sans', sans-serif;
-   background: rgb(40, 40, 43); // matte black
+   background: $base-color; // matte black
    color: white;
-   padding: 2rem;
-   width: 300px;
-   height: 350px;
+   padding: 2em;
    
   img {
-   position: relative;
-   top: -30%;
-   left: 30%;
+    position: relative;
+    top: -27%;
+    left: 30%;
+    
+    background: 
+      linear-gradient(-45deg,  
+          $color-1, 
+          $theme-color-websites,
+          $color-2,
+          rgb(20, 30, 48)
+      );
   
-   background: 
-   linear-gradient(45deg,  
-     rgb(4, 76, 108), 
-     rgb(255,105,180),
-     rgb(37, 149, 194),
-     rgb(20, 30, 48)
-   );
- 
- border-radius: 50%;
- padding: 10px;
- width: 100px;
- height:100px;
+    border-radius: 50%;
+    padding: 10px;
+
   }
  
  
    h1 {
      position: relative;
-     top: -30%;
-     color: rgb(37, 149, 194);
-     font-size: 1.8em;
-     text-align: left;
-     padding: 0.25em 0.25em 1em 0.25em;
+     top: -25%;
+     color: $color-2;
+     text-align: center;
+     padding: 0.25em 0.01em 1em 0.01em;
      
    }
    p {
      position: relative;
      top: -30%;
-     font-size: 1.2em;
+     line-height: 1.5em;
+     padding: 0.01em 0.25em 1em 0.25em;
    }
  }
  
  
- 
- 
- .web-cta {
-   font-family: 'Quicksand', sans-serif;
-   padding: 2em;
-   background-color: rgb(255,105,180);
-   width: 20%;
-   text-align: center;
-   margin: auto;
-   border-radius: 2em;
-   padding: 0.75em 0.1em;
-   a {
-     color: white;
-     text-decoration: none;
-     font-size: 1.75em;
-     
-     
-   }
- 
+ .outcomes-cta-container {
+    background-color: $theme-color-websites;
  }
- 
- 
+
  
