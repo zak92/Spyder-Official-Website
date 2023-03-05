@@ -1,0 +1,198 @@
+@import '../../../../App.scss';
+@import '../../websites.scss';
+
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 799px) {
+
+  .price-container {
+     padding: 1.25em;
+     h1 {
+      font-size: 2.5em;
+      padding: 0.5em;
+    }
+  }
+  .price-cards {
+    padding: 3em 1em 2em 1em;
+    h2 {
+      font-size: 2.5em;
+     }
+     h4 {
+      font-size: 1.75em;
+     }
+  }
+  .price-card {
+    padding: 1.75em;
+  }
+  .feature-list {
+    font-size: 1.25em;
+    ul {
+      padding: 2em 0;
+    }
+    li {
+      line-height: 2.2em;  
+    }
+  }
+  .pricing-cta {
+    font-size: 1.5em;
+   }
+  .ppp {
+    padding-top: 3em;
+    font-size: 1.2em;
+  }
+
+
+}
+
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+  .price-container {
+    padding: 2em;
+    h1 {
+     font-size: 2.6em;
+     padding: 1em;
+   }
+ }
+ .price-cards {
+  padding: 3em 1em 2em 1em;
+    h2 {
+      font-size: 2.5em;
+    }
+    h4 {
+      font-size: 1.8em;
+    }
+  }
+  .price-card {
+    padding: 3em;
+  }
+  .feature-list {
+    font-size: 1.4em;
+    ul {
+      padding: 2em 1em ;
+    }
+    li {
+      line-height: 2.4em;  
+    }
+  }
+  .pricing-cta {
+    font-size: 1.5em;
+   }
+  .ppp {
+    padding-top: 4em;
+    font-size: 1.25em;
+  }
+
+
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1100px) {
+  .price-container {
+    padding: 2em;
+    h1 {
+     font-size: 2.75em;
+     padding: 1em;
+   }
+ }
+ .price-cards {
+  padding: 3em 1em 2em 1em;
+    h2 {
+      font-size: 2.65em;
+    }
+    h4 {
+      font-size: 1.85em;
+    }
+ }
+ .price-card {
+    padding: 3em;
+  }
+  .feature-list {
+    font-size: 1.5em;
+    ul {
+      padding: 2em 1em ;
+    }
+    li {
+      line-height: 2.4em;  
+    }
+  }
+  .pricing-cta {
+    font-size: 1.75em;
+   }
+   .ppp {
+    padding-top: 4em;
+    font-size: 1.25em;
+   }
+
+}
+
+.price-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+   
+      rgb(255,105,180, 0.9), 
+      rgb(37, 149, 194, 0.75)
+     
+    ),
+    /* bottom, image */
+   
+    url('../../../../assets/images/price-container.jpg'); //Photo by <a href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/j3c6FN11CkA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+    h1 {
+      text-align: center;
+      font-family: $font-family-1;
+    }
+    
+   overflow-x: hidden; 
+}
+
+.price-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  color: white;
+
+  h2 {
+    text-align: center;
+    font-family: $font-family-1;
+   }
+   h4 {
+    text-align: center;
+    font-family: $font-family-1;
+   }
+
+}
+
+.price-card {
+  font-family: $font-family-2;
+  border-radius: 2em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.pricing-cta-container {
+  background-color: $base-color;
+}
+
+
+ .ppp {
+  font-family: $font-family-1;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  bottom: 0;
+  left: 0;
+ }
