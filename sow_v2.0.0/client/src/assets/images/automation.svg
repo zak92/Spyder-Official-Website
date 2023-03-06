@@ -8,13 +8,13 @@ viewBox="0 0 2048 2048"
   <style type="text/css">
 
     .fil7 {fill:none}
-    .fil3 {fill:#6C828C}
-    .fil0 {fill:#78909C}
-    .fil2 {fill:#82949D}
-    .fil1 {fill:#90A4AE}
-    .fil5 {fill:#FFA000}
-    .fil6 {fill:#FFB300}
-    .fil4 {fill:#FFD54F}
+    .fil3 {fill:rgb(255,105,180, 1)}
+    .fil0 {fill:rgb(255,105,180, 1)}
+    .fil2 {fill:rgb(255,105,180, 1)}
+    .fil1 {fill:rgb(255,105,180, 1)}
+    .fil5 {fill:#fff}
+    .fil6 {fill:#fff}
+    .fil4 {fill:#fff}
 
   </style>
  </defs>

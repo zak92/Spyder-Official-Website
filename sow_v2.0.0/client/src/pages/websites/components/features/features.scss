@@ -1,52 +1,127 @@
 @import '../../../../App.scss';
 @import '../../websites.scss';
 
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 799px) {
+  .features {
+    padding: 4em;
+    
+    h1 {
+      font-size: 2.75em;
+    }
+  }
+  .feature {
+     img {
+      width: 115px;
+      height: 115px;
+     }
+     h3 {
+       font-size: 1.4em;
+     }
+   }
+}
 
-.more-benefits {
-  padding: 8em;
-  background: #E4EBF5;
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+  .features {
+    padding: 5em;
+    
+    h1 {
+      font-size: 3.5em;
+      padding-bottom: 1.5em;
+    }
+  }
+  .feature {
+     img {
+      width: 125px;
+      height: 125px;
+     }
+     h3 {
+       font-size: 1.45em;
+     }
+   }
+}
 
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1100px) {
+  .features {
+    padding: 5em;
+    
+    h1 {
+      font-size: 3.5em;
+      padding-bottom: 1.5em;
+    }
+  }
+  .feature {
+    padding: 2.75em 0;
+    width: 280px;
+    height: 280px;
+   
+     img {
+      width: 125px;
+      height: 125px;
+     }
+     h3 {
+       font-size: 1.45em;
+     }
+   }
+}
+
+
+/* --------------------------------------- */
+
+.features {
+  background-color: white;
+  
   h1 {
-    font-size: 3.5em;
     padding-bottom: 1.5em;
     text-align: center;
-    font-family: 'Poiret One', sans-serif;
+    font-family: $font-family-1;
     color: black;
   }
 }
-.more-benefits-container {
+
+.features-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 5em;
-  
-
- 
 }
-.benefit-block {
+
+.feature-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- border-radius: 2em; 
- padding: 4em;
- box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem white;
+  padding: 1.26em 0;
+  //box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem white;
+  background: #ffffff;
+  box-shadow:  5px 5px 15px #d6d6d6,
+  -5px -5px 15px #ffffff;
   text-align: center;
-  width: 300px;
-  height: 280px;
- 
- 
-  img {
-    width: 125px;
-   height: 125px;
-   
-  }
-  h3 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.45em;
-    padding-top: 1em;
-  }
+  background: 
+    linear-gradient(-45deg,  
+    $color-1, 
+    $theme-color-websites,
+    $color-2,
+    rgb(20, 30, 48)
+  );
+ color:black;
 
+}
+
+.feature {
+  padding: 2.75em 0;
+  background: white; 
+  width: 280px;
+  height: 280px;
+
+  h3 {
+    font-family: $font-family-2;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }

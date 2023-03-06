@@ -12,17 +12,17 @@ import Speed from '../../../../assets/images/speed.svg'
 import Support from '../../../../assets/images/support.svg'
 import Seo from '../../../../assets/images/seo.svg'
 
-const moreBenefits = [
-  { name: 'Backups', component: Backups, id: 1 },
-  { name: 'Analytics', component: Analytics, id: 2 },
+const features = [
+  { name: 'Backups', alt: 'backups', component: Backups, id: 1 },
+  { name: 'Analytics', alt: 'analytics doc', component: Analytics, id: 2 },
   { name: 'Data Security', component: Security, id: 3 },
-  { name: 'Support', component: Support, id: 4 },
-  { name: 'Fast Speed', component: Speed, id: 5 },
-  { name: 'API Integrations', component: Api, id: 6 },
-  { name: 'Automation', component: Automation, id: 7 },
-  { name: 'Conversion Optimization', component: Cro, id: 8 },
-  { name: 'Email Drip Campaigns', component: Email, id: 9 },
-  { name: 'Search Engine Optimization', component: Seo, id: 10 },
+  { name: 'Support', alt: 'headphones', component: Support, id: 4 },
+  { name: 'Fast Speed', alt: 'speedometer', component: Speed, id: 5 },
+  { name: 'API Integrations', alt: 'API', component: Api, id: 6 },
+  { name: 'Automation', alt: 'automation', component: Automation, id: 7 },
+  { name: 'Conversion Optimization', alt: 'optimization', component: Cro, id: 8 },
+  { name: 'Email Drip Campaigns', alt: 'email', component: Email, id: 9 },
+  { name: 'SEO', alt: 'SEO', component: Seo, id: 10 },
 
 
 
@@ -31,16 +31,17 @@ const moreBenefits = [
 const Features = () => {
   return (
     <>
-    <div className='more-benefits'>
+    <div className='features'>
     <h1>Drive more sales</h1>
-    <div className='more-benefits-container'>
+    <div className='features-container'>
         
-        {moreBenefits.map(({ name, component, id }) => (
-        <div  className='benefit-block'
-          key={id}
-        >
-           <img src={component} style={{ }}  alt="React Logo" />
+        {features.map(({ name, component, alt, id }) => (
+        <div className='feature-block' key={id}  >
+          <div className='feature'>
+          <img src={component}  alt={alt} />
           <h3>{name}</h3>
+          </div>
+           
         </div>
       ))}
       </div>
