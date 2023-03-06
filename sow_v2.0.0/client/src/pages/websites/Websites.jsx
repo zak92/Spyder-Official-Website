@@ -50,7 +50,11 @@ const Websites = () => {
 <Pricing />
 <Features />
 
-<CTA />
+<CTA 
+  content='Start getting the results you want today with a powerful website in your arsenal.'
+  bgColor1='cta-section-background'
+  bgColor2='cta-section-btn-background'
+/>
 
 <Footer />
       

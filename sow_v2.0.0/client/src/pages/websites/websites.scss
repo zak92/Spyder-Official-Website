@@ -18,9 +18,41 @@ $theme-color-websites: rgb(255,105,180);
   
 }
 
+.cta-section-background {
+  background:
+  radial-gradient(
+    farthest-corner at bottom left,
+    $color-1, 
+    transparent
+  ),
+  radial-gradient(
+    farthest-corner at bottom right,
+    rgb(209, 7, 108), 
+    transparent 900px
+  ),
 
+  radial-gradient(
+    farthest-side at top right,
+    $theme-color-websites, 
+    transparent 
+  ),
+  radial-gradient(
+    farthest-corner at top left,
+    $color-3, 
+    transparent 700px
+  ),
+  radial-gradient(
+    circle at top right,
+    $theme-color-websites, 
+    transparent 
+  );
+}
 
-
+.cta-section-btn-background {
+  background-color: $base-color;
+  border: none;
+ 
+}
 
 
 

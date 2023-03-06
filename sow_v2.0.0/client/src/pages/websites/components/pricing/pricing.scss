@@ -180,14 +180,17 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 5em;
 }
 
 
 .pricing-cta-container {
-  background-color: $base-color;
+  text-align: center;
 }
 
-
+.pricing-cta {
+  background-color: $base-color;
+}
  .ppp {
   font-family: $font-family-1;
   font-weight: bold;

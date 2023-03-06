@@ -11,15 +11,15 @@ import {
 
 import { SiWhatsapp } from 'react-icons/si';
 import { MdOutlineMail } from 'react-icons/md';
+import { BiCopyright } from 'react-icons/bi';
 
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const secLinks = [
   { name: "Websites & Landing Pages", to: "/websites", id: 1 },
   { name: "Ecommerce", to: '/ecommerce', id: 3 },
   { name: "Email Marketing", to: "/email", id: 4 },
   { name: "Contact", to: "/book", id: 5 },
- // { name: "Affiliate Program", to: "https://affiliates.spyder.digital/", id: 6 },
 
 
 ];
@@ -74,7 +74,13 @@ const Footer = () => {
         </div>
 
         <div className='footer-cta'>
-          <a href='/book'>Book a Call</a>
+        <NavLink
+          reloadDocument
+          className='footer-cta-link'
+          to='/book'
+          >
+            Book a Call
+          </NavLink>
         </div>
           
 
@@ -84,13 +90,33 @@ const Footer = () => {
      
 
       <div className='policies'>  
+
         <div className='pp'>
-          <a href='#'>Privacy Policy</a>
+         <NavLink
+            target='_blank'
+            className='pp-link'
+            to='#'
+          >
+            Privacy Policy
+          </NavLink>
         </div>
+
         <div className='tc'>
-          <a href='#'>Terms & Conditions</a>
+          <NavLink
+            target='_blank'
+            className='tc-link'
+            to='#'
+          >
+            Terms & Conditions
+          </NavLink>
         </div>
+
+        <div className='copyright'>
+          Spyder<BiCopyright />{new Date().getFullYear()}
+          </div>
+
       </div>
+
     </div>
   )
 }

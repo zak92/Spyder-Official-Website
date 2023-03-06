@@ -1,32 +1,143 @@
-.footer-container {
-  background-color: black;
+@import '../../App.scss';
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 799px) {
+  .footer-container {
+    padding: 2em 1em;
+  }
+  .main-footer-content {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .social-icon-footer {
+    font-size: 1.25em;
+  }
+  .socials-footer {
+    padding: 1.5em 4em;
+    a {
+      padding: 0.75em 0.4em;
+    }
+  }
+  .sec-menu {
+    padding: 2em 1em 4em 1em;
+    align-items: center;
+  }
+  .sec-menu-item {
+    font-size: 1.25em;
   
-  padding: 1em 10em 2em 9em;
-  font-family: 'Poiret One', sans-serif;
+  }
+  .policies {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pp {
+    padding-top: 1em;
+  }
+  
+  .tc {
+    padding-top: 1em;
+  }
+}
+
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+  .footer-container {
+    padding: 1em 12em 4em 9em;
+  }
+  .main-footer-content {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .social-icon-footer {
+    font-size: 1.5em;
+    padding-bottom: 2em;
+  }
+  .socials-footer {
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    padding-top: 1em;
+   a {
+     padding: 3em 0.4em;
+   }
+   
+ }
+ .sec-menu {
+    align-items: center;
+    padding: 2em 1em 4em 1em;
+
+  }
+ .sec-menu-item {
+    font-size: 1.25em;
+  }
+  .pp {
+    padding-right: 2em;
+  }
+  
+  .tc {
+    padding-right: 2em;
+  }
+  .footer-cta {
+    text-align: center;
+  }
+  .policies {
+    align-items: center;
+  }
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1100px) {
+  .footer-container {
+    padding: 1em 12em 4em 9em;
+  }
+  .main-footer-content {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .social-icon-footer {
+    font-size: 1.75em;
+  }
+  .socials-footer {
+    padding-left: 1.5em;
+    padding-top: 1em;
+    padding-right: 1.25em;
+   a {
+     padding: 3em 0.4em;
+   }
+   
+ }
+ .sec-menu-item {
+    font-size: 1.25em;
+  }
+  .pp {
+    padding-right: 2em;
+  }
+  
+  .tc {
+    padding-right: 2em;
+  }
+}
+
+
+/* --------------------------*/
+
+
+.footer-container {
+  background-color: $base-color;
+  font-family: $font-family-1;
 }
 
 
 .main-footer-content {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
   flex-wrap: wrap;
-
- 
- 
 }
 
 .socials-footer {
-  
-  padding-left: 1.5em;
-  padding-top: 1em;
   display: flex;
   justify-content: center;
-
-  a {
-    padding: 3em 0.4em;
-  }
-  
+  flex-wrap: wrap;
 
 }
 
@@ -36,32 +147,34 @@
   border-radius: 2em;
   border: 2px solid white;
   color: white;
-  font-size: 1.75em;
-}
-
-.sec-menu {
-
-
   
 }
 
+.social-icon-footer:hover {
+  color: $color-2;
+  border: 2px solid $color-3;
+}
+.sec-menu {
+  display: flex;
+  flex-direction: column;
+  
+}
 .sec-menu-item {
   color: white;
   text-decoration: none;
   display: flex;
   line-height: 2em;
-  font-size: 1.25em;
 }
 
+.sec-menu-item:hover {
+  color: $color-3;
+}
 .contact {
   font-size: 1.25em;
-  
    a {
     color: white;
     text-decoration: none;
-    
-   }
-   
+   } 
 }
 
 .info {
@@ -72,30 +185,43 @@
 }
 
 .footer-cta {
+  padding: 0.5em;
+}
+
+.footer-cta-link {
+  text-align: center;
   background-color: white;
- 
+  font-size: 1.25em;
+  color: black !important;
+  font-weight: 900;
   border: 2px solid white;
   border-radius: 2em;
-  text-align: center;
-  padding: 0.5em;
-  a {
-    color: black;
-    font-weight: 900;
-  }
+  padding: 0.25em 1em;
+}
+.footer-cta-link:hover {
+  color: white !important;
+  background-color: $base-color;
 }
 
 
 .policies {
-  font-size: 1.25em;
   display: flex;
-
-  a {
-    color: white;
-    text-decoration: none;
-
-  }
+  color: white;
+  padding-top: 4em;
 }
 
-.pp {
-  padding-right: 2em;
+
+.pp-link {
+  font-size: 1.25em;
+  color: white;
 }
+
+.tc-link {
+  font-size: 1.25em;
+  color: white;
+}
+
+.copyright {
+  font-size: 1.25em;
+}
+

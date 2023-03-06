@@ -1,90 +1,102 @@
 @import '../../App.scss';
 
-
-.cta-section {
-  background-color: black;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding-top: 6em;
-   padding-bottom: 6em;
-   
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 799px) {
+  .cta-text {
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.25em;
+    }
+  }
+  .cta-content {
+    padding: 3em 2em;
+  }
+  
+  .cta-cta {
+    font-size: 1.5em;
+  }
 }
 
-.ctas-container {
-  width: 75%;
-
-  //position: relative;
- 
-  border-radius: 2em;
-  background: 
-  radial-gradient(
-    farthest-corner at bottom left,
-    rgba(4,76,108,1), 
-    transparent
-  ),
-  radial-gradient(
-    farthest-corner at bottom right,
-    rgb(78, 31, 76), 
-    transparent 600px
-  ),
-
-  radial-gradient(
-    farthest-side at top right,
-    rgb(133, 6, 122), 
-    transparent 
-  ),
-  radial-gradient(
-    farthest-corner at top left,
-    rgb(31, 143, 119), 
-    transparent 700px
-  ),
-  radial-gradient(
-    circle at top right,
-    rgba(130, 43, 180, 0.5), 
-    transparent 
-  );
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+  .cta-text {
+    h2 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.35em;
+    }
+  }
+  .cta-content {
+    padding: 3em 5em;
+  }
 
   
+  .cta-cta {
+    font-size: 1.65em;
+  }
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1100px) {
+  .cta-text {
+    h2 {
+      font-size: 2.8em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
+  .cta-content {
+    padding: 3em 6em;
+  }
+
+  .cta-cta {
+    font-size: 1.75em;
+  }
+}
+
+
+/* --------------------------*/
+.cta-section {
+  background-color: $base-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.cta-container-section {
+  width: 75%;
+  border-radius: 2em;
 }
 
 .cta-text {
   color: white;
   text-align: center;
 
-
   h2 {
-    font-size: 2em;
-    padding-bottom: 1.25em;
-
+    padding-bottom: 1em;
+    font-family: $font-family-1;
   }
   p {
-    font-size: 1.5em;
     padding-bottom: 2.25em;
   }
 }
 
 .cta-content {
-  font-family: 'Quicksand', sans-serif;
-  padding: 3em 6em;
-
-  
+  font-family: $font-family-2;
 }
 
-.cta-btn {
-  font-family: 'Quicksand', sans-serif;
-  padding: 2em;
-  background-color: rgb(255,105,180);
-  width: 25%;
+.cta-cta-container {
   text-align: center;
-  margin: auto;
-  border-radius: 2em;
-  padding: 0.75em 0.1em;
-  a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.75em;
-    
-    
-  }
+  padding-bottom: 2em;
+ }
+ 
+
+.cta-cta {
+  color: white;
 }

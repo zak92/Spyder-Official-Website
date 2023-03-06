@@ -63,10 +63,10 @@
   }
   .outcomes-cta {
     font-size: 1.75em;
-    padding: 0.5em
+    padding: 0.5em 2em;
    }
    .outcomes-cta-container {
-    width: 40%;
+    width: 60%;
     margin: auto;
   }
 }
@@ -100,7 +100,7 @@
       font-size: 1.75em;
     }
     .outcomes-cta-container {
-      width: 20%;
+      width: 50%;
       margin: auto;
     }
   
@@ -186,7 +186,12 @@
  
  
  .outcomes-cta-container {
-    background-color: $theme-color-websites;
+    text-align: center;
  }
+
+ .outcomes-cta {
+  font-size: 1.75em;
+  background-color: $theme-color-websites;
+}
 
  

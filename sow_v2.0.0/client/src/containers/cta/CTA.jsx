@@ -1,22 +1,22 @@
 import React from 'react'
 import './cta.scss';
 
+import { CTA as CTAButton } from '../../components';
 
-const CTA = () => {
+
+const CTA = (props) => {
   return (
     <div className='cta-section'>
-        <div className='ctas-container'>
+        <div className={`cta-container-section ${props.bgColor1}`}>
           <div className='cta-content'>
             <div className='cta-text'>
               <h2>Are you ready for it?</h2>
-              <p>Start getting the results you want today with a powerful website in your arsenal.</p>
-              
+              <p>{props.content}</p>
               </div>
-
-              <div className='cta-btn'>
-              <a href='/book'>Book a Call</a>
-              
-            </div>
+              <CTAButton 
+                  styleName1='cta-cta-container'
+                  styleName2={`cta-cta ${props.bgColor2}`}
+              />  
           </div>
         </div>
 

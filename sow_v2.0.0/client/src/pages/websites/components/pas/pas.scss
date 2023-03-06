@@ -20,7 +20,7 @@
     padding-bottom: 5em;
   }
   .pas-cta-container {
-    width: 25%;
+    width: 100%;
   }
 
 }
@@ -31,7 +31,7 @@
     padding-bottom: 5em;
   }
   .pas-cta-container {
-    width: 25%;
+    width: 100%;
   }
 
 }
@@ -43,7 +43,7 @@
     padding-bottom: 8em;
   }
   .pas-cta-container {
-    width: 25%;
+    width: 100%;
   }
 
 }
@@ -103,8 +103,6 @@
   padding-bottom: 2em;
 }
 
-.pas-cta-container {
+.pas-cta {
   background-color: $theme-color-websites; 
-  
 }
-
